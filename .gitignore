@@ -1,19 +1,9 @@
 # Entorno virtual 
 ws/
 .ws/
+venv/
+.venv/
+env/
+.env/
 *.pyc
 _pycache_/
-
-# Carpeta de imágenes 
-data/
-data/
-data/
-*.jpg
-*.jpeg
-*.png
-*.gif
-
-# Otros archivos que no quieras subir
-.DS_Store
-*.log
-*.sqlite3
