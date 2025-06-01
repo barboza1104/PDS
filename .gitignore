@@ -1,9 +1,15 @@
-# Entorno virtual 
-echo "ws/" >> .gitignore
-echo ".ws/" >> .gitignore
-echo "venv/" >> .gitignore
-echo ".venv/" >> .gitignore
-echo "env/" >> .gitignore
-echo ".env/" >> .gitignore
-echo "*.pyc" >> .gitignore
-_pycache_/" >> .gitignore
+# macOS
+.DS_Store
+
+# IntelliJ / WebStorm / PhpStorm / etc.
+.idea/
+*.iml
+
+
+# Byte‐compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+#venv 
+.ws/
+ws/
