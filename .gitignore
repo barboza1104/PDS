@@ -1,9 +1,9 @@
 # Entorno virtual 
-ws/
-.ws/
-venv/
-.venv/
-env/
-.env/
-*.pyc
-_pycache_/
+echo "ws/" >> .gitignore
+echo ".ws/" >> .gitignore
+echo "venv/" >> .gitignore
+echo ".venv/" >> .gitignore
+echo "env/" >> .gitignore
+echo ".env/" >> .gitignore
+echo "*.pyc" >> .gitignore
+_pycache_/" >> .gitignore
