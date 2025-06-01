@@ -1,0 +1,12 @@
+# ignorar archivos de entorno
+ws/
+.ws/
+.env/
+env/
+venv/
+.venv/
+
+#Ignorar archivos de compilación
+*.pyc
+*.pyo
+_pycache_/
