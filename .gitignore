@@ -1,19 +1,15 @@
-# Entorno virtual 
-ws/
-.ws/
-*.pyc
-_pycache_/
-
-# Carpeta de imágenes 
-data/
-data/
-data/
-*.jpg
-*.jpeg
-*.png
-*.gif
-
-# Otros archivos que no quieras subir
+# macOS
 .DS_Store
-*.log
-*.sqlite3
+
+# IntelliJ / WebStorm / PhpStorm / etc.
+.idea/
+*.iml
+
+
+# Byte‐compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+#venv 
+.ws/
+ws/
