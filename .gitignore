@@ -12,4 +12,8 @@ __pycache__/
 
 #venv 
 .ws/
+<<<<<<< HEAD
 ws/
+=======
+ws/
+>>>>>>> decf92abbfcb51a65b7da7f57601946e1ebacbbb
