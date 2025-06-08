@@ -41,3 +41,27 @@ def signal_plots(t_cont, x_cont, t_disc, x_disc, title):
     fig2.suptitle(title)
     plt.tight_layout()
     plt.show()
+
+def compare_plotter(t_cont, x_cont, x_ref_cont, n_disc, x_disc, x_ref_disc, A, f, phi):
+    import matplotlib.pyplot as plt
+
+    fig, axs = plt.subplots(2, 1, figsize=(10, 6))
+
+    axs[0].plot(t_cont, x_ref_cont, 'k--', label='Referencia: A=1, f=1Hz, ϕ=0')
+    axs[0].plot(t_cont, x_cont, 'b', label=f'Modificada: A={A}, f={f}Hz, ϕ={phi} rad')
+    axs[0].set_title('Señal Continua')
+    axs[0].set_xlabel('Tiempo [s]')
+    axs[0].set_ylabel('Amplitud')
+    axs[0].legend()
+    axs[0].grid(True)
+
+    axs[1].stem(n_disc, x_ref_disc, linefmt='k--', markerfmt='ko', basefmt=' ', label='Referencia: A=1, f=1Hz, ϕ=0')
+    axs[1].stem(n_disc, x_disc, linefmt='b-', markerfmt='bo', basefmt=' ', label=f'Modificada: A={A}, f={f}Hz, ϕ={phi} rad')
+    axs[1].set_title('Señal Discreta')
+    axs[1].set_xlabel('Tiempo [s]')
+    axs[1].set_ylabel('Amplitud')
+    axs[1].legend()
+    axs[1].grid(True)
+
+    plt.tight_layout()
+    plt.show()
